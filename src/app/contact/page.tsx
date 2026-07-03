@@ -18,7 +18,7 @@ export default function ContactPage() {
             <input
               id="firstName"
               type="text"
-              placeholder="Kwame"
+              placeholder="Voornaam"
               className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>
@@ -32,7 +32,7 @@ export default function ContactPage() {
             <input
               id="lastName"
               type="text"
-              placeholder="Asante"
+              placeholder="Achternaam"
               className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>
@@ -62,6 +62,7 @@ export default function ContactPage() {
             <option value="booking">DJ / Artist Booking</option>
             <option value="press">Press & Media</option>
             <option value="partnership">Partnership</option>
+            <option value="location">Location</option>
             <option value="general">General Enquiry</option>
           </select>
         </div>

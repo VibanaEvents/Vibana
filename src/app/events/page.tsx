@@ -10,7 +10,7 @@ export default function EventsPage() {
       </div>
 
       <div className="flex flex-col items-center justify-center py-24 text-center">
-        <p className="text-5xl mb-6">🎶</p>
+        <p className="text-5xl mb-6">🧡</p>
         <h2 className="text-2xl font-bold mb-3">Coming Soon</h2>
         <p className="text-gray-500 max-w-sm text-sm leading-relaxed">
           We&apos;re working on something special. New events will be announced
