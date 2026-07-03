@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-poppins);
+  --font-bebas: var(--font-bebas);
+}
+
+/* YouTube IFrame API replaces #yt-hero-player with an <iframe>.
+   These rules override the fixed width/height attributes YT sets,
+   keeping the iframe full-screen with object-cover behaviour. */
+.yt-hero-wrapper iframe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 16:9 cover: fill width on wide viewports */
+  width: 100vw;
+  height: 56.25vw;
+  /* fill height on tall viewports */
+  min-height: 100vh;
+  min-width: 177.78vh;
+  border: none;
+  pointer-events: none;
+}
+
+@keyframes hero-kb-a {
+  from { transform: scale(1) translate(0, 0); }
+  to   { transform: scale(1.12) translate(-2%, -1%); }
+}
+
+@keyframes hero-kb-b {
+  from { transform: scale(1.06) translate(1%, 0.5%); }
+  to   { transform: scale(1.15) translate(-1%, 1.5%); }
+}
+
+.hero-kb-a {
+  animation: hero-kb-a 10s ease-in-out infinite alternate;
+}
+
+.hero-kb-b {
+  animation: hero-kb-b 10s ease-in-out infinite alternate;
+}
