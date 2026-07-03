@@ -18,7 +18,7 @@ export default function ContactPage() {
             <input
               id="firstName"
               type="text"
-              placeholder="Voornaam"
+              placeholder="First name"
               className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>
@@ -32,7 +32,7 @@ export default function ContactPage() {
             <input
               id="lastName"
               type="text"
-              placeholder="Achternaam"
+              placeholder="Last name"
               className="w-full border border-gray-300 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-black"
             />
           </div>

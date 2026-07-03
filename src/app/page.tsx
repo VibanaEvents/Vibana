@@ -8,35 +8,25 @@ export default function HomePage() {
     <>
       {/* Hero — fullscreen video background */}
       <section className="relative flex flex-col items-center justify-center text-center min-h-screen overflow-hidden">
-        {/* YouTube fullscreen background */}
-        <div
+        {/* MP4 fullscreen background */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+          poster="/images/0.1.BackgroundHomepage.png"
           style={{
             position: "absolute",
             top: 0,
             left: 0,
             width: "100%",
             height: "100%",
-            overflow: "hidden",
+            objectFit: "cover",
           }}
         >
-          <iframe
-            src="https://www.youtube.com/embed/Y7ze-WcWC7s?autoplay=1&mute=1&loop=1&controls=0&showinfo=0&rel=0&playlist=Y7ze-WcWC7s&enablejsapi=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            title="Vibana background video"
-            style={{
-              position: "absolute",
-              top: "50%",
-              left: "50%",
-              transform: "translate(-50%, -50%)",
-              width: "100vw",
-              height: "56.25vw",
-              minHeight: "100vh",
-              minWidth: "177.77vh",
-              border: "none",
-              pointerEvents: "none",
-            }}
-          />
-        </div>
+          <source src="/aftermovie.mp4" type="video/mp4" />
+        </video>
 
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/40" />
