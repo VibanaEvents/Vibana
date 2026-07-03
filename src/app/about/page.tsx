@@ -24,7 +24,7 @@ export default function AboutPage() {
           { stat: "2025",   label: "Founded" },
           { stat: "2+",     label: "Events hosted" },
           { stat: "600+",   label: "Visitors reached" },
-          { stat: "1678+",  label: "Instagram followers" },
+          { stat: "35.8k+", label: "Social media followers" },
         ].map(({ stat, label }) => (
           <div key={label} className="bg-gray-50 rounded-2xl py-8 px-4">
             <p className="text-3xl font-bold mb-2">{stat}</p>
